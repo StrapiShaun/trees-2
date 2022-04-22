@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaves",
+  "info": {
+    "singularName": "leaf",
+    "pluralName": "leaves",
+    "displayName": "Leaf"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "tree": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tree.tree"
+    }
+  }
+}
