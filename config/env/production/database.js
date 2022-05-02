@@ -4,11 +4,11 @@ export default ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST'), 
-      port: env.int('DATABASE_PORT'), 
-      database: env('DATABASE_NAME'), 
-      user: env('DATABASE_USERNAME'), 
-      password: env('DATABASE_PASSWORD'),
+      host: "db-postgresql-ams3-88374-do-user-2064451-0.b.db.ondigitalocean.com", 
+      port: 25060, 
+      database: "defaultdb", 
+      user: "doadmin", 
+      password: "AVNS_dSevaVO7yrepcoP",
       ssl: {
         rejectUnauthorized:env.bool('DATABASE_SSL_SELF', false),
       },
